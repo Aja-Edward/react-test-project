@@ -1,0 +1,120 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+;
+
+
+padding: ${pagePadding};
+
+.product-wrapper {
+    display: grid;
+    display: flex;
+    align-items: start;
+    justify-contents: center;
+
+    .product-image-container {
+        display: flex;
+        width: 60%;
+
+        .product-images-container {
+            display: flex;
+            flex-direction: column;
+            width: 9%;
+            height: 20px;
+            margin-right: 50px;
+
+            .image {
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .image-zoom {
+        width: 60%;
+        margin-left: 20px;
+        justify-self: center;
+    }
+
+}
+
+.product-attributes {
+    width: 40%;
+    padding-left: 50px;
+
+    h2 {
+        grid-column: span 6;
+    }
+
+    p {
+        padding-bottom: 15px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+    }
+
+    .item-attributes {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 50px 50px;
+
+    }
+
+    .item-attributes li {
+        list-style-type: none;
+        text-align: center;
+        padding: 15px 10px;
+        margin-right: 10px;
+        border: 1px solid gray;
+        color: ${COLORS.textColor};
+        cursor: pointer;
+    }
+
+    .item-attributes li:hover {
+        background: #1D1F22;
+        color: #fff;
+    }
+
+    .product-price {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-price span {
+        margin: 20px;
+        margin-left: 0;
+    }
+
+    h3 {
+        padding-bottom: 20px;
+
+    }
+
+    button,
+    .button {
+        padding: 16px 80px;
+        background-color: #5ECE7B;
+        border: none;
+        color: ${COLORS.backgroundColor};
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        margin-bottom: 2rem;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+}
+
+.discription {
+    max-width: 55%;
+}
